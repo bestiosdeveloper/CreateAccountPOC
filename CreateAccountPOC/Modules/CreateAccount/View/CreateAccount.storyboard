@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="02B-Ak-JHp">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Create Account View Controller-->
+        <scene sceneID="4VB-qt-vuV">
+            <objects>
+                <viewController storyboardIdentifier="CreateAccountViewController" id="02B-Ak-JHp" customClass="CreateAccountViewController" customModule="CreateAccountPOC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HTh-3Z-kYB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let's sacn your Driving License and create your bank account" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yY4-d5-M67">
+                                <rect key="frame" x="10" y="426.5" width="394" height="53"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fEd-d4-hOY">
+                                <rect key="frame" x="132" y="549.5" width="150" height="50"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="5wb-2h-n8k"/>
+                                    <constraint firstAttribute="width" constant="150" id="7ub-RI-78N"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Create New">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="createNewButtonAction:" destination="02B-Ak-JHp" eventType="touchUpInside" id="E1d-3q-lLY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="yY4-d5-M67" firstAttribute="leading" secondItem="c9n-uh-P9c" secondAttribute="leading" constant="10" id="9LP-pb-wHP"/>
+                            <constraint firstItem="fEd-d4-hOY" firstAttribute="centerX" secondItem="yY4-d5-M67" secondAttribute="centerX" id="Bon-dt-1Cb"/>
+                            <constraint firstItem="fEd-d4-hOY" firstAttribute="top" secondItem="yY4-d5-M67" secondAttribute="bottom" constant="70" id="V72-U2-IGS"/>
+                            <constraint firstItem="c9n-uh-P9c" firstAttribute="trailing" secondItem="yY4-d5-M67" secondAttribute="trailing" constant="10" id="jIj-BK-RbK"/>
+                            <constraint firstItem="yY4-d5-M67" firstAttribute="centerY" secondItem="c9n-uh-P9c" secondAttribute="centerY" id="u1F-q7-s67"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="c9n-uh-P9c"/>
+                    </view>
+                    <connections>
+                        <outlet property="createNewButton" destination="fEd-d4-hOY" id="pZG-Xk-9DS"/>
+                        <outlet property="messageLabel" destination="yY4-d5-M67" id="Qja-tw-XB5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rot-9f-ie0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="22" y="55"/>
+        </scene>
+        <!--New Born View Controller-->
+        <scene sceneID="5Eg-RC-mO1">
+            <objects>
+                <viewController storyboardIdentifier="NewBornViewController" id="TyH-tC-Zfl" customClass="NewBornViewController" customModule="CreateAccountPOC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="URN-1M-TdJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I'm new born." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OPg-HN-Ajo">
+                                <rect key="frame" x="10" y="439.5" width="394" height="27.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UiG-ie-Hfo">
+                                <rect key="frame" x="132" y="491" width="150" height="50"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="xaW-30-y9y"/>
+                                    <constraint firstAttribute="height" constant="50" id="zLg-6N-a4C"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Magic!!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="magicButtonAction:" destination="TyH-tC-Zfl" eventType="touchUpInside" id="YID-86-EQS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="OPg-HN-Ajo" firstAttribute="centerY" secondItem="QDp-d9-Vh3" secondAttribute="centerY" id="0Dq-XL-Zps"/>
+                            <constraint firstItem="UiG-ie-Hfo" firstAttribute="centerX" secondItem="OPg-HN-Ajo" secondAttribute="centerX" id="4wp-7h-McN"/>
+                            <constraint firstItem="QDp-d9-Vh3" firstAttribute="trailing" secondItem="OPg-HN-Ajo" secondAttribute="trailing" constant="10" id="9Q7-hy-dSv"/>
+                            <constraint firstItem="OPg-HN-Ajo" firstAttribute="leading" secondItem="QDp-d9-Vh3" secondAttribute="leading" constant="10" id="A1L-70-6SZ"/>
+                            <constraint firstItem="UiG-ie-Hfo" firstAttribute="top" secondItem="OPg-HN-Ajo" secondAttribute="bottom" constant="24" id="d8Q-l5-pqI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="QDp-d9-Vh3"/>
+                    </view>
+                    <connections>
+                        <outlet property="magicButton" destination="UiG-ie-Hfo" id="nah-xR-qn1"/>
+                        <outlet property="messageLabel" destination="OPg-HN-Ajo" id="LxJ-EX-UmE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ys5-kJ-vid" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="674" y="66"/>
+        </scene>
+    </scenes>
+</document>

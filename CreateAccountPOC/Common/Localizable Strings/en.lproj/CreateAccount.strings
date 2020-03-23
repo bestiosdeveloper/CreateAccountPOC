@@ -1,0 +1,12 @@
+/* 
+  CreateAccount.strings
+  CreateAccountPOC
+
+  Created by Pramod Kumar on 23/03/20.
+  Copyright © 2020 Pramod Kumar. All rights reserved.
+*/
+
+"letCreateAccountMessage" = "Let's sacn your Driving License and create your bank account.";
+"newBornMessage" = "I'm new born.";
+"createNew" = "Create New";
+"magic" = "Magic!!";

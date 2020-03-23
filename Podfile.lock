@@ -1,0 +1,20 @@
+PODS:
+  - Alamofire (5.0.4)
+  - PKLoader (0.0.7)
+
+DEPENDENCIES:
+  - Alamofire
+  - PKLoader
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - PKLoader
+
+SPEC CHECKSUMS:
+  Alamofire: 0fe5fd24b4298dc377a6550da7d5f1b30e286fcb
+  PKLoader: 25894faef3a0ea94d8c6b8e761e02184aba14783
+
+PODFILE CHECKSUM: 3adcbeae905f87e95fa2272286619c1b5bfb5d9a
+
+COCOAPODS: 1.8.4

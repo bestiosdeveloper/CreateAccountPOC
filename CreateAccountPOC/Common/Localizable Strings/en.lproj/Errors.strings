@@ -1,0 +1,11 @@
+/* 
+  Errors.strings
+  OmniMobileApp
+
+  Created by Mahajan, Piya on 1/10/19.
+  Copyright © 2019 U.S. Bank. All rights reserved.
+*/
+
+//Common
+"nothingToShow" = "Here is lonely for you.";
+"noInternet" = "It seems you don't have internet connection.";
